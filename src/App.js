@@ -151,9 +151,9 @@ function App() {
       { label: "NFI", value: 916 }
   ]
 
- // const [shipments, setShipments] = useState(res)
+  const [shipments, setShipments] = useState(res)
   const [currentScan, setCurrentScan] = useState(res.data[0].scan)
-  //const [status, setStatus] = useState(initialStatus)
+  const [status, setStatus] = useState(initialStatus)
 
   const onClickHandler = (scan) => {
       setCurrentScan(scan)
